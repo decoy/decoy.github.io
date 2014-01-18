@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[kellen.piffner.com]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://kellen.piffner.com/"/>
+  <updated>2014-01-18T21:48:25.015Z</updated>
+  <id>http://kellen.piffner.com/</id>
+  
+  <author>
+    <name><![CDATA[Kellen Piffner]]></name>
+    
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[New Blog]]></title>
+    <link href="http://kellen.piffner.com/2014/01/17/new-blog/"/>
+    <id>http://kellen.piffner.com/2014/01/17/new-blog/</id>
+    <published>2014-01-18T06:29:28.000Z</published>
+    <updated>2014-01-18T21:45:21.000Z</updated>
+    <content type="html"><![CDATA[<p>Hello and welcome to the requisite &quot;New Blog&quot; post.  This is the first blog I&#39;ve set up in awhile, and the technologies used may be interesting to some.</p>
+<h2 id="static-site">Static Site</h2>
+<p>To keep hosting simple, this blog is entirely static html, CSS, and JavaScript.  The &quot;server&quot; is just any web server that can spit out static files.  This choice opened up options like hosting using <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>, or even <a href="https://www.dropbox.com/" target="_blank">DropBox</a>. </p>
+<p>While the site is static, I&#39;m not manually copying and pasting the header and footer to all the individual pages, or even writing in html.  I&#39;m using a &quot;static site generator&quot;.  The generator works a lot like a server would: it takes my original blog entry data and my site templates and glues it all together outputting html.  The difference between it and something like PHP, is it&#39;s only doing it <em>once</em>.</p>
+<p>Now there are a surprising number of &quot;static site generators&quot; out there, so I didn&#39;t have to re-invent the wheel.  This blog is currently generated using <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> - &quot;A fast, simple &amp; powerful blog framework, powered by Node.js.&quot;  </p>
+<h2 id="hexo">Hexo</h2>
+<p>Hexo is built using <a href="http://nodejs.org/" target="_blank">Node.js</a>, a cross platform scripting engine that&#39;s ridiculously easy to deploy and has a rapidly expanding community.  </p>
+<p>Hexo itself is fairly simple.  It takes <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> files - a simple plain text format - and outputs html using <a href="http://embeddedjs.com/" target="_blank">EJS</a> templates.  Because nodejs community has lots library options for converting markdown to html and parsing EJS templates, Hexo only has to manage the flow of the process, and doesn&#39;t have to deal with the complicated parsing problems.  It&#39;s fairly simple to create custom plugins that support things other than markdown and EJS as well.</p>
+<p>Because of of this simplicity, if Hexo is ever abandoned (not uncommon for an open source app), it won&#39;t be too difficult to find or create a replacement.</p>
+<h2 id="source-code">Source Code</h2>
+<p>If you&#39;re interested in the site, feel free to check out the source code hosted up on github.</p>
+<p><a href="https://github.com/decoy/blog" target="_blank">Source</a></p>
+]]></content>
+    
+    
+      <category term="hello world" scheme="http://kellen.piffner.com/tags/hello%20world/"/>
+    
+      <category term="blog" scheme="http://kellen.piffner.com/tags/blog/"/>
+    
+      <category term="hexo" scheme="http://kellen.piffner.com/tags/hexo/"/>
+    
+      <category term="nodejs" scheme="http://kellen.piffner.com/tags/nodejs/"/>
+    
+      <category term="javascript" scheme="http://kellen.piffner.com/tags/javascript/"/>
+    
+      <category term="css" scheme="http://kellen.piffner.com/tags/css/"/>
+    
+      <category term="html" scheme="http://kellen.piffner.com/tags/html/"/>
+    
+  </entry>
+  
+</feed>
