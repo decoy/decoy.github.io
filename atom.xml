@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://kellen.piffner.com/"/>
-  <updated>2014-02-09T18:32:18.008Z</updated>
+  <updated>2014-02-10T05:21:32.201Z</updated>
   <id>http://kellen.piffner.com/</id>
   
   <author>
@@ -19,11 +19,11 @@
     <link href="http://kellen.piffner.com/2014/01/31/basic-animation/"/>
     <id>http://kellen.piffner.com/2014/01/31/basic-animation/</id>
     <published>2014-02-01T03:52:32.000Z</published>
-    <updated>2014-02-09T18:31:36.000Z</updated>
+    <updated>2014-02-10T05:07:31.000Z</updated>
     <content type="html"><![CDATA[<p>In my day job, I spend a lot of time coding core business logic applications.  What do you do with data A in situation B kind of logic.  So when I work on something code related in my off time, I like to putz with technologies outside of that bubble.</p>
 <p>With that in mind, I&#39;m going to talk about animation.</p>
 <h2 id="old-school">Old School</h2>
-<p>Back in &quot;the day&quot;, many games just updated as fast as the CPU could.  If you loaded the same game on a faster computer, the animations would move faster.  This could result in fun times likes a typing game where the game&#39;s &quot;40 words per minute&quot; was closer to 120. (I regularly scored 14!)</p>
+<p>Back in &quot;the day&quot;, many games just updated as fast as the CPU could.  If you loaded the same game on a faster computer, everything would move faster.  This could result in fun times likes a typing game where the game&#39;s &quot;40 words per minute&quot; was closer to 120. (I regularly scored 14!)</p>
 <p>You can end up with this same problem by being &#39;frame rate dependent&#39; with your animations.  Basically, this means that you update the position of your objects at the same time that you draw the object.</p>
 <p>Here&#39;s an example running 10fps, 30fps, and 60fps while drawing a simple animation:</p>
 <p><p data-height="175" data-theme-id="4105" data-slug-hash="LHgbm" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/LHgbm'>frame based animation</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
