@@ -48,13 +48,90 @@
     <a class="symbol" title="linkedin" target="_blank" href="http://www.linkedin.com/in/kellenpiffner">&#xe052;</a>
     <a class="symbol" title="blog feed" target="_blank" href="/atom.xml">&#xe071;</a>
 </div>
-<!--<div class="tagcloud" id="fbox-tagcloud"><a href="/tags/blog/" style="font-size: 12.00px;">blog</a><a href="/tags/css/" style="font-size: 18.00px;">css</a><a href="/tags/hello world/" style="font-size: 12.00px;">hello world</a><a href="/tags/hexo/" style="font-size: 12.00px;">hexo</a><a href="/tags/html/" style="font-size: 12.00px;">html</a><a href="/tags/javascript/" style="font-size: 24.00px;">javascript</a><a href="/tags/microsoft/" style="font-size: 12.00px;">microsoft</a><a href="/tags/nodejs/" style="font-size: 12.00px;">nodejs</a><a href="/tags/typescript/" style="font-size: 12.00px;">typescript</a><a href="/tags/visual studio/" style="font-size: 12.00px;">visual studio</a><a href="/tags/web/" style="font-size: 18.00px;">web</a></div>-->
+    </header>
 
+    
+    <article class="ghost post">
+    <div class="article-date">
+        <p class="article-day">22</p>
+        <p class="article-month">Feb 2014</p>
+    </div>
+
+    <header>
+
+        
+<h1 class="article-title"><a href="/2014/02/22/monty-hall-puzzle/">Monty Hall Puzzle</a></h1>
 
 
     </header>
 
-    
+    <div class="article-entry">
+        
+        <p>Wikipedia has an excellent article on the “probability puzzle” know as the Monty Hall problem.  </p>
+<blockquote>
+<p><a href="http://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">http://en.wikipedia.org/wiki/Monty_Hall_problem</a></p>
+</blockquote>
+<p>It’s based around the concept of a game show where a contestant must pick one of three doors.  Behind one of the doors is the prize.  When the contestant picks the door, the host opens one of the other doors that doesn’t have the prize and then asks the contestant if they want to switch their choice.  The question: Do you switch or not? </p>
+<blockquote>
+<img src="/img/montyhall1.png" title="Goat">
+
+
+</blockquote>
+<p>At first, most people guess that it doesn’t matter.  There are two closed doors, so your chance must be 1:2 to guess correctly, right?  The correct answer:  You should always switch.</p>
+<h2 id="simulation">Simulation</h2>
+<p>For some reason, instead of reading through the rest of the Wikipedia article, I decided I needed to recreate this simulation in javascript (of course), so you can play along.</p>
+<p>First, here’s the game. It will track when you switch doors and when you don’t and spit out your winning stats.  You can also press the &quot;Simulate&quot; button to automatically &quot;play&quot; the game so you can see the odds of winning for yourself.</p>
+<p>Try it yourself:</p>
+<p><p data-height="550" data-theme-id="4105" data-slug-hash="qdkFp" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/decoyahoy/pen/qdkFp'>Monty Hall Problem simulator</a> by kp (<a href='http://codepen.io/decoyahoy'>@decoyahoy</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p>You can see that when simulating play, the odds roughly come out to be 1:3 when staying, and 2:3 when switching doors.</p>
+<img src="/img/montyhall2.png" >
+
+
+<h2 id="different-way-of-thinking">Different way of thinking</h2>
+<p>For me, breaking a concept down in order to turn it into a program often helps me see that concept differently.</p>
+<p>In this case, after building the program I realized that you can think of the switch as getting to pick two doors instead of just the one.  You’re picking the door you <em>don’t</em> want to open.</p>
+<p>You can enable that behavior instead by choosing the game mode &quot;Open Others&quot; at the bottom.  Every play is the equivalent of “open both doors that aren’t this one.”  You can also flip the switch to &quot;Open Selected&quot; to change the behavior to the opposite: where the door you pick is the one that’s opened.</p>
+<p>You can also change the number of total doors.  If you set it to something like 20 (where your odds are now 1:20 for staying and 19:20 for switching) it might help visualize the what&#39;s going on here.  Here&#39;s a quote from Marilyn vos Savant from that Wikipedia article.</p>
+<blockquote>
+<p>Yes; you should switch. The first door has a 1/3 chance of winning, but the second door has a 2/3 chance. Here&#39;s a good way to visualize what happened. Suppose there are a million doors, and you pick door #1. Then the host, who knows what&#39;s behind the doors and will always avoid the one with the prize, opens them all except door #777,777. You&#39;d switch to that door pretty fast, wouldn&#39;t you?</p>
+</blockquote>
+<h2 id="conclusion">Conclusion</h2>
+<p>There are many other simulations of this puzzle out there (and youtube videos, articles, dance interpretations, etc...), but hopefully the code sample is useful to someone, or someone learned something new.</p>
+<p>For me, it was a fun way to spend a few hours playing with <a href="http://codepen.io" target="_blank">http://codepen.io</a> trying to make a ‘door’ animation in CSS.</p>
+<p>One thing to note: I wrote the front end in <a href="http://angularjs.org/ Angularj" target="_blank">AngularJS</a>.  I&#39;ll blog about that more later, but using the framework easily halved the code necessary to display the UI.</p>
+<p>For some more reading about the css doors:
+<a href="http://24ways.org/2010/intro-to-css-3d-transforms/" target="_blank">http://24ways.org/2010/intro-to-css-3d-transforms/</a></p>
+<p>Cheers!</p>
+
+        
+    </div>
+
+    <footer>
+        <div class="article-tags">
+            
+Tags:
+  
+<a href='/tags/javascript/' class="article-tag">javascript</a>
+  
+<a href='/tags/css3/' class="article-tag">css3</a>
+  
+<a href='/tags/angularjs/' class="article-tag">angularjs</a>
+  
+<a href='/tags/web/' class="article-tag">web</a>
+  
+<a href='/tags/codepen/' class="article-tag">codepen</a>
+  
+
+        </div>
+        
+        
+    </footer>
+</article>
+
+
+
     <article class="ghost post">
     <div class="article-date">
         <p class="article-day">31</p>
@@ -371,7 +448,9 @@ Tags:
   
 <a href='/tags/web/' class="article-tag">web</a>
   
-<a href='/tags/css/' class="article-tag">css</a>
+<a href='/tags/codepen/' class="article-tag">codepen</a>
+  
+<a href='/tags/animation/' class="article-tag">animation</a>
   
 
         </div>
@@ -544,69 +623,11 @@ Tags:
 
 
 
-    <article class="ghost post">
-    <div class="article-date">
-        <p class="article-day">17</p>
-        <p class="article-month">Jan 2014</p>
-    </div>
-
-    <header>
-
-        
-<h1 class="article-title"><a href="/2014/01/17/new-blog/">New Blog</a></h1>
-
-
-    </header>
-
-    <div class="article-entry">
-        
-        <p>Hello and welcome to the requisite &quot;New Blog&quot; post.  This is the first blog I&#39;ve set up in awhile, and the technologies used may be interesting to some.</p>
-<h2 id="static-site">Static Site</h2>
-<p>To keep hosting simple, this blog is entirely static html, CSS, and JavaScript.  The &quot;server&quot; is just any web server that can spit out static files.  This choice opened up options like hosting using <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>, or even <a href="https://www.dropbox.com/" target="_blank">DropBox</a>. </p>
-<p>While the site is static, I&#39;m not manually copying and pasting the header and footer to all the individual pages, or even writing in html.  I&#39;m using a &quot;static site generator&quot;.  The generator works a lot like a server would: it takes my original blog entry data and my site templates and glues it all together outputting html.  The difference between it and something like PHP, is it&#39;s only doing it <em>once</em>.</p>
-<p>Now there are a surprising number of &quot;static site generators&quot; out there, so I didn&#39;t have to re-invent the wheel.  This blog is currently generated using <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> - &quot;A fast, simple &amp; powerful blog framework, powered by Node.js.&quot;  </p>
-<h2 id="hexo">Hexo</h2>
-<p>Hexo is built using <a href="http://nodejs.org/" target="_blank">Node.js</a>, a cross platform scripting engine that&#39;s ridiculously easy to deploy and has a rapidly expanding community.  </p>
-<p>Hexo itself is fairly simple.  It takes <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> files - a simple plain text format - and outputs html using <a href="http://embeddedjs.com/" target="_blank">EJS</a> templates.  Because nodejs community has lots library options for converting markdown to html and parsing EJS templates, Hexo only has to manage the flow of the process, and doesn&#39;t have to deal with the complicated parsing problems.  It&#39;s fairly simple to create custom plugins that support things other than markdown and EJS as well.</p>
-<p>Because of of this simplicity, if Hexo is ever abandoned (not uncommon for an open source app), it won&#39;t be too difficult to find or create a replacement.</p>
-<h2 id="source-code">Source Code</h2>
-<p>If you&#39;re interested in the site, feel free to check out the source code hosted up on github.</p>
-<p><a href="https://github.com/decoy/blog" target="_blank">Source</a></p>
-
-        
-    </div>
-
-    <footer>
-        <div class="article-tags">
-            
-Tags:
-  
-<a href='/tags/hello world/' class="article-tag">hello world</a>
-  
-<a href='/tags/blog/' class="article-tag">blog</a>
-  
-<a href='/tags/hexo/' class="article-tag">hexo</a>
-  
-<a href='/tags/nodejs/' class="article-tag">nodejs</a>
-  
-<a href='/tags/javascript/' class="article-tag">javascript</a>
-  
-<a href='/tags/css/' class="article-tag">css</a>
-  
-<a href='/tags/html/' class="article-tag">html</a>
-  
-
-        </div>
-        
-        
-    </footer>
-</article>
-
-
-
 
 <div class="pagination">
     
+    
+    <a href="/page/2/">Older</a>
     
 </div>
 
@@ -632,7 +653,7 @@ Tags:
   
 <script type="text/javascript">
     //the tag 'cloud'
-    var tags = [{"name":"hello world","path":"tags/hello world/","permalink":"http://kellen.piffner.com/tags/hello world/","slug":"hello world","length":1},{"name":"blog","path":"tags/blog/","permalink":"http://kellen.piffner.com/tags/blog/","slug":"blog","length":1},{"name":"hexo","path":"tags/hexo/","permalink":"http://kellen.piffner.com/tags/hexo/","slug":"hexo","length":1},{"name":"nodejs","path":"tags/nodejs/","permalink":"http://kellen.piffner.com/tags/nodejs/","slug":"nodejs","length":1},{"name":"javascript","path":"tags/javascript/","permalink":"http://kellen.piffner.com/tags/javascript/","slug":"javascript","length":3},{"name":"css","path":"tags/css/","permalink":"http://kellen.piffner.com/tags/css/","slug":"css","length":2},{"name":"html","path":"tags/html/","permalink":"http://kellen.piffner.com/tags/html/","slug":"html","length":1},{"name":"typescript","path":"tags/typescript/","permalink":"http://kellen.piffner.com/tags/typescript/","slug":"typescript","length":1},{"name":"microsoft","path":"tags/microsoft/","permalink":"http://kellen.piffner.com/tags/microsoft/","slug":"microsoft","length":1},{"name":"visual studio","path":"tags/visual studio/","permalink":"http://kellen.piffner.com/tags/visual studio/","slug":"visual studio","length":1},{"name":"web","path":"tags/web/","permalink":"http://kellen.piffner.com/tags/web/","slug":"web","length":2}];
+    var tags = [{"name":"hello world","path":"tags/hello world/","permalink":"http://kellen.piffner.com/tags/hello world/","slug":"hello world","length":1},{"name":"blog","path":"tags/blog/","permalink":"http://kellen.piffner.com/tags/blog/","slug":"blog","length":1},{"name":"hexo","path":"tags/hexo/","permalink":"http://kellen.piffner.com/tags/hexo/","slug":"hexo","length":1},{"name":"nodejs","path":"tags/nodejs/","permalink":"http://kellen.piffner.com/tags/nodejs/","slug":"nodejs","length":1},{"name":"javascript","path":"tags/javascript/","permalink":"http://kellen.piffner.com/tags/javascript/","slug":"javascript","length":4},{"name":"css","path":"tags/css/","permalink":"http://kellen.piffner.com/tags/css/","slug":"css","length":1},{"name":"html","path":"tags/html/","permalink":"http://kellen.piffner.com/tags/html/","slug":"html","length":1},{"name":"typescript","path":"tags/typescript/","permalink":"http://kellen.piffner.com/tags/typescript/","slug":"typescript","length":1},{"name":"microsoft","path":"tags/microsoft/","permalink":"http://kellen.piffner.com/tags/microsoft/","slug":"microsoft","length":1},{"name":"visual studio","path":"tags/visual studio/","permalink":"http://kellen.piffner.com/tags/visual studio/","slug":"visual studio","length":1},{"name":"web","path":"tags/web/","permalink":"http://kellen.piffner.com/tags/web/","slug":"web","length":3},{"name":"codepen","path":"tags/codepen/","permalink":"http://kellen.piffner.com/tags/codepen/","slug":"codepen","length":2},{"name":"animation","path":"tags/animation/","permalink":"http://kellen.piffner.com/tags/animation/","slug":"animation","length":1},{"name":"css3","path":"tags/css3/","permalink":"http://kellen.piffner.com/tags/css3/","slug":"css3","length":1},{"name":"angularjs","path":"tags/angularjs/","permalink":"http://kellen.piffner.com/tags/angularjs/","slug":"angularjs","length":1}];
 </script>
 
 
