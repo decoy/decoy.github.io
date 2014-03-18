@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://kellen.piffner.com/"/>
-  <updated>2014-02-22T20:02:37.193Z</updated>
+  <updated>2014-03-18T00:45:58.576Z</updated>
   <id>http://kellen.piffner.com/</id>
   
   <author>
@@ -15,11 +15,56 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[I Broke Subversion]]></title>
+    <link href="http://kellen.piffner.com/2014/03/08/i-broke-svn/"/>
+    <id>http://kellen.piffner.com/2014/03/08/i-broke-svn/</id>
+    <published>2014-03-08T22:48:06.000Z</published>
+    <updated>2014-03-18T00:45:18.000Z</updated>
+    <content type="html"><![CDATA[<p>This week I accidentally broke SVN.  Or, more appropriately, SVN broke me.</p>
+<p>We recently moved a folder from a project to a shared location and setup an <a href="http://svnbook.red-bean.com/en/1.0/ch07s03.html" target="_blank">svn external</a> to point to this new location.</p>
+<p>Steps taken:</p>
+<ul>
+<li>Make a copy of <code>trunk\ProjectA\ui</code> to <code>trunk\ui</code></li>
+<li>Delete <code>trunk\ProjectA\ui</code></li>
+<li>Add external to <code>trunk\ProjectA\ui</code> for <code>..\ui</code></li>
+</ul>
+<p>There were some other steps in the middle of all of that, but that&#39;s the short version.</p>
+<p>Everything worked fine until we needed to switch back to a branch that was not sharing the folder.  What resulted was something of a mess.  I&#39;m not the first person to notice this problem, and you can see another post about it here: <a href="http://samwilson.id.au/2011/12/28/svn/" target="_blank">http://samwilson.id.au/2011/12/28/svn/</a>.</p>
+<p>And here&#39;s a quick script to recreate the problem, including the workaround at the bottom:</p>
+<script src="https://gist.github.com/decoy/596c8d5afd7217ddaacd.js"></script>
+
+<h2 id="tortoise-svn-cleanup">Tortoise SVN Cleanup</h2>
+<p>I&#39;m a big fan of Tortoise&#39;s cleanup options.  I go through this dialog every time I get ready to do a merge, just to make sure the workspace is as clean as it can get without checking out a fresh copy.</p>
+<img src="/img/tsvn_cleanup.png" title="Clean all the things">
+
+
+<p>Unfortunately, running the cleanup with those options and then switching resulted in this...</p>
+<img src="/img/tsvn_switch_error.png" title="Break all the things">
+
+
+<p>I couldn&#39;t recreate this exact error from the command line, so I&#39;m not sure if it&#39;s a Tortoise specific, or just something odd with the way it does the cleanup.  My best guess is that the cleanup removed the externals folders until you run the next update, and the switch did not like that...</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>So I threw in the towel on this one.  The &quot;ui&quot; folder was renamed to &quot;lib&quot; and everything is happy.  The problems experienced above are entirely due to the external replacing a folder of the same name.</p>
+<p>Otherwise, I&#39;ve found SVN Externals to be a good fit for our need at this point.  A couple of things to keep in mind, though:</p>
+<ul>
+<li>Commits including externals are not atomic.  (The external commit will happen separately from the rest of the commit.)</li>
+<li>If you peg a relative path to a revision you will likely get errors about that folder not existing.  (../lib at revision 455 will not exist on a branch that was just created in revision 502, for example.)</li>
+</ul>
+]]></content>
+    
+    
+      <category term="svn" scheme="http://kellen.piffner.com/tags/svn/"/>
+    
+      <category term="development" scheme="http://kellen.piffner.com/tags/development/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Monty Hall Puzzle]]></title>
     <link href="http://kellen.piffner.com/2014/02/22/monty-hall-puzzle/"/>
     <id>http://kellen.piffner.com/2014/02/22/monty-hall-puzzle/</id>
     <published>2014-02-22T18:33:03.000Z</published>
-    <updated>2014-02-22T20:02:02.000Z</updated>
+    <updated>2014-02-22T20:58:04.000Z</updated>
     <content type="html"><![CDATA[<p>Wikipedia has an excellent article on the “probability puzzle” know as the Monty Hall problem.  </p>
 <blockquote>
 <p><a href="http://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">http://en.wikipedia.org/wiki/Monty_Hall_problem</a></p>
