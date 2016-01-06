@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://kellen.piffner.com/"/>
-  <updated>2016-01-06T06:47:09.317Z</updated>
+  <updated>2016-01-06T19:15:24.332Z</updated>
   <id>http://kellen.piffner.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   
   <entry>
     <title><![CDATA[Introducing PingPongr]]></title>
-    <link href="http://kellen.piffner.com/2015/01/05/PingPongr/"/>
-    <id>http://kellen.piffner.com/2015/01/05/PingPongr/</id>
-    <published>2015-01-06T04:00:00.000Z</published>
-    <updated>2016-01-06T06:26:35.206Z</updated>
-    <content type="html"><![CDATA[<p>Over the break, I wanted to build a quick nutrition web app.  Like every project I start, my first task was to update everything to the latest, and try out as many new &#39;things&#39; as possible.</p>
+    <link href="http://kellen.piffner.com/2016/01/06/PingPongr/"/>
+    <id>http://kellen.piffner.com/2016/01/06/PingPongr/</id>
+    <published>2016-01-06T18:00:00.000Z</published>
+    <updated>2016-01-06T19:14:43.698Z</updated>
+    <content type="html"><![CDATA[<p>Over the break, I wanted to build a quick nutrition web app.</p>
 <p>My normal go-to framework for web applications is <a href="https://github.com/NancyFx/Nancy" target="_blank">Nancy</a>.  It&#39;s pretty lean and easy to get going, but... lately it&#39;s been feeling rather heavy.  It has a lot of features I never use (razor views, for instance), and I end up building out a good bit of bootstrap code to turn it all off and manually configure the bits I want.</p>
 <p>So... what to do...</p>
 <h2 id="mediatr">MediatR</h2>

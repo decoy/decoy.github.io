@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://kellen.piffner.com/2016/01/06/PingPongr/</loc>
+    <lastmod>2016-01-06T18:00:00.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://kellen.piffner.com/2014/03/08/i-broke-svn/</loc>
     <lastmod>2014-03-08T22:48:06.000Z</lastmod>
   </url>
@@ -24,11 +29,6 @@
   <url>
     <loc>http://kellen.piffner.com/2014/01/17/new-blog/</loc>
     <lastmod>2014-01-18T06:29:28.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kellen.piffner.com/2015/01/05/PingPongr/</loc>
-    <lastmod>2015-01-06T04:00:00.000Z</lastmod>
   </url>
   
 </urlset>
