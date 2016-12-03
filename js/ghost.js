@@ -1,4 +1,4 @@
-﻿//a ghost in effect when scrolling past a section
+//a ghost in effect when scrolling past a section
 
 //when we scroll, check positions
 $(window).scroll(ghost);

@@ -2,33 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kellen.piffner.com/2016/01/06/PingPongr/</loc>
-    <lastmod>2016-01-06T18:00:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kellen.piffner.com/2014/03/08/i-broke-svn/</loc>
-    <lastmod>2014-03-08T22:48:06.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kellen.piffner.com/2014/02/22/monty-hall-puzzle/</loc>
-    <lastmod>2014-02-22T18:33:03.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://kellen.piffner.com/2014/01/31/basic-animation/</loc>
-    <lastmod>2014-02-01T03:52:32.000Z</lastmod>
+    
+    <lastmod>2016-12-02T02:54:28.231Z</lastmod>
+    
   </url>
   
   <url>
     <loc>http://kellen.piffner.com/2014/01/18/typescript-and-visual-studio/</loc>
-    <lastmod>2014-01-19T04:26:35.000Z</lastmod>
+    
+    <lastmod>2016-12-02T01:25:50.036Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kellen.piffner.com/contact/index.html</loc>
+    
+    <lastmod>2016-12-02T00:00:40.619Z</lastmod>
+    
   </url>
   
   <url>
     <loc>http://kellen.piffner.com/2014/01/17/new-blog/</loc>
-    <lastmod>2014-01-18T06:29:28.000Z</lastmod>
+    
+    <lastmod>2016-12-01T23:30:24.135Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kellen.piffner.com/2016/01/06/PingPongr/</loc>
+    
+    <lastmod>2016-12-01T23:22:26.381Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kellen.piffner.com/2014/03/08/i-broke-svn/</loc>
+    
+    <lastmod>2016-12-01T06:11:57.415Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kellen.piffner.com/2014/02/22/monty-hall-puzzle/</loc>
+    
+    <lastmod>2016-12-01T06:11:44.673Z</lastmod>
+    
   </url>
   
 </urlset>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <meta charset="utf-8" />
     <meta name="author" content="Kellen Piffner" />
     <meta name="title" content="New Blog" />
@@ -9,12 +9,9 @@
     
     <link rel="alternative" href="/atom.xml" title="kellen.piffner.com" type="application/atom+xml">
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="/css/layout.css" type="text/css">
     <link rel="stylesheet" href="/css/blog.css" type="text/css">
     <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <link rel="stylesheet" href="/css/ie8.css" type="text/css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     
 <script>
@@ -34,81 +31,60 @@
 </head>
 
 <body>
-    <header id="header">
-    <!--[if lt IE 9]>
-<div class="unsupported-browser">
-    <p>This site talks about a lot of modern web technologies. As such, you're going to be missing out on a lot with this older browser.</p>
-    <p>I recommend upgrading to the latest <a href="https://ie.microsoft.com/">Internet Explorer</a>, <a href="https://chrome.google.com">Google Chrome</a>, or <a href="https://mozilla.org/firefox/">Firefox</a>.</p>
-    <p>If you are using IE 9 or later, make sure you <a href="http://windows.microsoft.com/en-US/windows7/webpages-look-incorrect-in-Internet-Explorer">turn off "Compatibility View"</a>.</p>
-</div>
-<![endif]-->
+    <div class="main">
+        <div class="container">
+            <article class="post">
+    <header class="page-header">
+        <div class="row page-header-title">
+            <h1 class="col c9">
+                New Blog
+            </h1>
+            <div class="col c3 col-right">
+                <a class="ico backlink articles-nav" href="/" title="Go to /"><span class="backlink-details">Home</span> ^</a>
+            </div>
+        </div>
+        <div class="page-subheader">
+            <time pubdate datetimes="2014-01-18T06:29:28.000Z">
+                <h4>
+                    17 Jan 2014
+                </h4>
+            </time>
+            <div class="tags">
+                
+  
+    <a href='/tags/hello-world/' class="article-tag">hello world</a>
+  
+    <a href='/tags/blog/' class="article-tag">blog</a>
+  
+    <a href='/tags/hexo/' class="article-tag">hexo</a>
+  
+    <a href='/tags/nodejs/' class="article-tag">nodejs</a>
+  
+    <a href='/tags/javascript/' class="article-tag">javascript</a>
+  
+    <a href='/tags/css/' class="article-tag">css</a>
+  
+    <a href='/tags/html/' class="article-tag">html</a>
+  
 
-<h1><a class="brand" href="/">kellen.piffner.com</a></h1>
-<div class="share-icons">
-    <a class="social-symbol" title="twitter" target="_blank" href="https://twitter.com/@KellenPiffner">&#xe086;</a>
-    <a class="social-symbol" title="github" target="_blank" href="https://github.com/decoy">&#xe037;</a>
-    <a class="social-symbol" title="google plus" target="_blank" href="https://plus.google.com/109745187704465695599/about">&#xe039;</a>
-    <a class="social-symbol" title="linkedin" target="_blank" href="http://www.linkedin.com/in/kellenpiffner">&#xe052;</a>
-    <a class="social-symbol" title="blog feed" target="_blank" href="/atom.xml">&#xe071;</a>
-</div>
-    </header>
-
-    <article class="ghost post">
-    <div class="article-date">
-        <p class="article-day">17</p>
-        <p class="article-month">Jan 2014</p>
-    </div>
-
-    <header>
-
-        
-<h1 class="article-title">New Blog</h1>
-
-
+            </div>
+        </div>
     </header>
 
     <div class="article-entry">
-        
-        <p>Hello and welcome to the requisite &quot;New Blog&quot; post.  This is the first blog I&#39;ve set up in awhile, and the technologies used may be interesting to some.</p>
-<h2 id="static-site">Static Site</h2>
-<p>To keep hosting simple, this blog is entirely static html, CSS, and JavaScript.  The &quot;server&quot; is just any web server that can spit out static files.  This choice opened up options like hosting using <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>, or even <a href="https://www.dropbox.com/" target="_blank">DropBox</a>. </p>
-<p>While the site is static, I&#39;m not manually copying and pasting the header and footer to all the individual pages, or even writing in html.  I&#39;m using a &quot;static site generator&quot;.  The generator works a lot like a server would: it takes my original blog entry data and my site templates and glues it all together outputting html.  The difference between it and something like PHP, is it&#39;s only doing it <em>once</em>.</p>
-<p>Now there are a surprising number of &quot;static site generators&quot; out there, so I didn&#39;t have to re-invent the wheel.  This blog is currently generated using <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> - &quot;A fast, simple &amp; powerful blog framework, powered by Node.js.&quot;  </p>
-<h2 id="hexo">Hexo</h2>
-<p>Hexo is built using <a href="http://nodejs.org/" target="_blank">Node.js</a>, a cross platform scripting engine that&#39;s ridiculously easy to deploy and has a rapidly expanding community.  </p>
-<p>Hexo itself is fairly simple.  It takes <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> files - a simple plain text format - and outputs html using <a href="http://embeddedjs.com/" target="_blank">EJS</a> templates.  Because nodejs community has lots library options for converting markdown to html and parsing EJS templates, Hexo only has to manage the flow of the process, and doesn&#39;t have to deal with the complicated parsing problems.  It&#39;s fairly simple to create custom plugins that support things other than markdown and EJS as well.</p>
-<p>Because of of this simplicity, if Hexo is ever abandoned (not uncommon for an open source app), it won&#39;t be too difficult to find or create a replacement.</p>
-<h2 id="source-code">Source Code</h2>
-<p>If you&#39;re interested in the site, feel free to check out the source code hosted up on github.</p>
-<p><a href="https://github.com/decoy/blog" target="_blank">Source</a></p>
+        <p>Hello and welcome to the requisite “New Blog” post.  This is the first blog I’ve set up in awhile, and the technologies used may be interesting to some.<br><a id="more"></a> </p>
+<h2 id="Static-Site"><a href="#Static-Site" class="headerlink" title="Static Site"></a>Static Site</h2><p>To keep hosting simple, this blog is entirely static html, CSS, and JavaScript.  The “server” is just any web server that can spit out static files.  This choice opened up options like hosting using <a href="http://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>, or even <a href="https://www.dropbox.com/" target="_blank" rel="external">DropBox</a>. </p>
+<p>While the site is static, I’m not manually copying and pasting the header and footer to all the individual pages, or even writing in html.  I’m using a “static site generator”.  The generator works a lot like a server would: it takes my original blog entry data and my site templates and glues it all together outputting html.  The difference between it and something like PHP, is it’s only doing it <em>once</em>.</p>
+<p>Now there are a surprising number of “static site generators” out there, so I didn’t have to re-invent the wheel.  This blog is currently generated using <a href="http://zespia.tw/hexo/" target="_blank" rel="external">Hexo</a> - “A fast, simple &amp; powerful blog framework, powered by Node.js.”  </p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo is built using <a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a>, a cross platform scripting engine that’s ridiculously easy to deploy and has a rapidly expanding community.  </p>
+<p>Hexo itself is fairly simple.  It takes <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a> files - a simple plain text format - and outputs html using <a href="http://embeddedjs.com/" target="_blank" rel="external">EJS</a> templates.  Because nodejs community has lots library options for converting markdown to html and parsing EJS templates, Hexo only has to manage the flow of the process, and doesn’t have to deal with the complicated parsing problems.  It’s fairly simple to create custom plugins that support things other than markdown and EJS as well.</p>
+<p>Because of of this simplicity, if Hexo is ever abandoned (not uncommon for an open source app), it won’t be too difficult to find or create a replacement.</p>
+<h2 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h2><p>If you’re interested in the site, feel free to check out the source code hosted up on github.</p>
+<p><a href="https://github.com/decoy/blog" target="_blank" rel="external">Source</a></p>
 
-        
     </div>
 
     <footer>
-        <div class="article-tags">
-            
-Tags:
-  
-<a href='/tags/hello world/' class="article-tag">hello world</a>
-  
-<a href='/tags/blog/' class="article-tag">blog</a>
-  
-<a href='/tags/hexo/' class="article-tag">hexo</a>
-  
-<a href='/tags/nodejs/' class="article-tag">nodejs</a>
-  
-<a href='/tags/javascript/' class="article-tag">javascript</a>
-  
-<a href='/tags/css/' class="article-tag">css</a>
-  
-<a href='/tags/html/' class="article-tag">html</a>
-  
-
-        </div>
-        
-        
-        <div class="article-author">Posted by Kellen Piffner<br />  2014-01-18T06:29:28.000Z</div>
         
 <section id="comment">
     <div id="disqus_thread"></div>
@@ -129,39 +105,43 @@ Tags:
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
 </section>
 
 
-        
     </footer>
 </article>
 
-
-    
-    <footer id="footer">
-    <div class="share-icons">
-    <a class="social-symbol" title="twitter" target="_blank" href="https://twitter.com/@KellenPiffner">&#xe086;</a>
-    <a class="social-symbol" title="github" target="_blank" href="https://github.com/decoy">&#xe037;</a>
-    <a class="social-symbol" title="google plus" target="_blank" href="https://plus.google.com/109745187704465695599/about">&#xe039;</a>
-    <a class="social-symbol" title="linkedin" target="_blank" href="http://www.linkedin.com/in/kellenpiffner">&#xe052;</a>
-    <a class="social-symbol" title="blog feed" target="_blank" href="/atom.xml">&#xe071;</a>
-</div>
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="/js/ghost.js"></script>
-
-
-
-  
-<script type="text/javascript">
-    //the tag 'cloud'
-    var tags = [{"name":"hello world","path":"tags/hello world/","permalink":"http://kellen.piffner.com/tags/hello world/","slug":"hello world","length":1},{"name":"blog","path":"tags/blog/","permalink":"http://kellen.piffner.com/tags/blog/","slug":"blog","length":1},{"name":"hexo","path":"tags/hexo/","permalink":"http://kellen.piffner.com/tags/hexo/","slug":"hexo","length":1},{"name":"nodejs","path":"tags/nodejs/","permalink":"http://kellen.piffner.com/tags/nodejs/","slug":"nodejs","length":1},{"name":"javascript","path":"tags/javascript/","permalink":"http://kellen.piffner.com/tags/javascript/","slug":"javascript","length":4},{"name":"css","path":"tags/css/","permalink":"http://kellen.piffner.com/tags/css/","slug":"css","length":1},{"name":"html","path":"tags/html/","permalink":"http://kellen.piffner.com/tags/html/","slug":"html","length":1},{"name":"typescript","path":"tags/typescript/","permalink":"http://kellen.piffner.com/tags/typescript/","slug":"typescript","length":1},{"name":"microsoft","path":"tags/microsoft/","permalink":"http://kellen.piffner.com/tags/microsoft/","slug":"microsoft","length":1},{"name":"visual studio","path":"tags/visual studio/","permalink":"http://kellen.piffner.com/tags/visual studio/","slug":"visual studio","length":1},{"name":"web","path":"tags/web/","permalink":"http://kellen.piffner.com/tags/web/","slug":"web","length":4},{"name":"codepen","path":"tags/codepen/","permalink":"http://kellen.piffner.com/tags/codepen/","slug":"codepen","length":2},{"name":"animation","path":"tags/animation/","permalink":"http://kellen.piffner.com/tags/animation/","slug":"animation","length":1},{"name":"css3","path":"tags/css3/","permalink":"http://kellen.piffner.com/tags/css3/","slug":"css3","length":1},{"name":"angularjs","path":"tags/angularjs/","permalink":"http://kellen.piffner.com/tags/angularjs/","slug":"angularjs","length":1},{"name":"svn","path":"tags/svn/","permalink":"http://kellen.piffner.com/tags/svn/","slug":"svn","length":1},{"name":"development","path":"tags/development/","permalink":"http://kellen.piffner.com/tags/development/","slug":"development","length":1},{"name":"PingPongr","path":"tags/PingPongr/","permalink":"http://kellen.piffner.com/tags/PingPongr/","slug":"PingPongr","length":1},{"name":"Owin","path":"tags/Owin/","permalink":"http://kellen.piffner.com/tags/Owin/","slug":"Owin","length":1},{"name":"DotNet","path":"tags/DotNet/","permalink":"http://kellen.piffner.com/tags/DotNet/","slug":"DotNet","length":1}];
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+        </div>
+    </div>
+    <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col c7">
+                <a href="/">
+                    kellen.piffner.com
+                </a>
+            </div>
+            <div class="col c5 col-right">
+                <a class="social-symbol" title="twitter" target="_blank" href="https://twitter.com/@KellenPiffner">&#xe086;</a>
+<a class="social-symbol" title="github" target="_blank" href="https://github.com/decoy">&#xe037;</a>
+<a class="social-symbol" title="google+" target="_blank" href="https://plus.google.com/109745187704465695599/about">&#xe039;</a>
+<a class="social-symbol" title="linkedin" target="_blank" href="http://www.linkedin.com/in/kellenpiffner">&#xe052;</a>
+<a class="social-symbol" title="rss" target="_blank" href="/atom.xml">&#xe071;</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script> 
+var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4}; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.min.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
 </script>
-
-
-
-
-
 </body>
 </html>
